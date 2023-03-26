@@ -7,8 +7,13 @@ const generateMarkdown = require('./utils/generateMarkdown')
 const questions = [
     {
         type: 'input',
-        name: 'name',
-        message: 'What is your name?',
+        name: 'project-title',
+        message: 'Enter your Project Title.',
+    },
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Write a short description of your Project.',
     },
     {
         type: 'input',
@@ -17,13 +22,8 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'name',
-        message: 'What is your name?',
-    },
-    {
-        type: 'input',
-        name: 'name',
-        message: 'What is your name?',
+        name: 'github',
+        message: 'What is your Github username?',
     },
     {
         type: 'input',
@@ -40,11 +40,18 @@ const questions = [
 // TODO: Create a function to write README file
 // ask DMG about fs.writeFile versus this
 function writeToFile(filename, data) {
-
+    return fs.writeFileSync(path.join(process.cwd(), filename), data); 
+    // cwd = current working directory 
+    // REVIEW writeFileSync doesn't require a callback param like writeFile does
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.createPromptModule(questions).then((inquirerResponses) => {
+        console.log('Generating README file...')
+        writeToFile('README.md', generateMarkdown({...inquirerResponses})); // REVIEW ... rest/spread
+        })
+}
 
 // Function call to initialize app
 init();
