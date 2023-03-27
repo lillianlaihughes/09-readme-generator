@@ -49,15 +49,13 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Select a license for your project.',
-        choices: ['Apache 2.0', 'MIT', 'GNU GPLv3', 'Creative Commons', 'None']
+        choices: ['Apache_2.0', 'MIT', 'GNU_GPLv3', 'None']
     }
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(filename, data) {
-    return fs.writeFileSync('README.md', filename, data);
-    // return fs.writeFileSync(path.join(process.cwd(), filename), data); 
-    // cwd = current working directory 
+    return fs.writeFileSync('README.md', data);
     // REVIEW fs.writeFileSync doesn't require a callback param like fs.writeFile does
 }
 
@@ -73,8 +71,7 @@ function init() {
 // Function call to initialize app
 init();
 
-
-
+// REVIEW FROM CLASS ACTIVITIES
 // inquirer
 //   .prompt([
 //     {

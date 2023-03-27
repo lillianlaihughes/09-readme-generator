@@ -52,7 +52,7 @@ ${renderLicenseLink(data.license)}
 ## Installation
 To install necessary dependencies, run the following command:
 \`\`\` 
-${data.installion}
+${data.installation}
 \`\`\`
 
 ## Usage
