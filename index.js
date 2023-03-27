@@ -65,7 +65,7 @@ function init() {
     .prompt(questions)
     .then((answers) => {
         console.log('Generating README file...')
-        writeToFile('README.md', generateMarkdown({...answers})); // REVIEW ... rest/spread)        
+        writeToFile('README.md', generateMarkdown({...answers})); // REVIEW ... rest/spread        
     })
 }
 // Function call to initialize app

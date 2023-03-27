@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== 'None') {
-    return `[License](https://img.shields.io/badge/license-${license}-blue.svg)`; 
+    return `![License](https://img.shields.io/badge/license-${license}-blue.svg)`; 
     // add url and insert ${} for license name
   }
   return '';
@@ -21,14 +21,14 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'None') {
-    return `## License
-    This project is licensed under the ${license} license.`;
+    return `\n ## License 
+    \nThis project is licensed under the ${license} license.\n`;
    }
   return '';
 }
 
 // TODO: Create a function to generate markdown for README
-// note to me: insert back slashes to render back-ticks properly due to template literals
+// note to self: insert back slashes to render back-ticks properly due to template literals
 
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -41,13 +41,13 @@ ${data.description}
 * [Installation](#installation)
 
 * [Usage](#usage)
-${renderLicenseLink(data.license)}
 
-* [Contributing](#contributing)
+* [Contribution](#contribution)
 
-* [Tests] (#tests)
+* [Tests](#tests)
 
 * [Questions](#questions)
+${renderLicenseLink(data.license)}
 
 ## Installation
 To install necessary dependencies, run the following command:
@@ -69,6 +69,8 @@ ${data.test}
 
 ## Questions
 If you have any questions about this repo, open an issue or send a message to ${data.email}. You can find more of my work at [Github: ${data.github}](https://github.com/${data.github}/).
+
+${renderLicenseSection(data.license)} 
 `;
 }
 
