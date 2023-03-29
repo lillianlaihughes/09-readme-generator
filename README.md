@@ -43,14 +43,15 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 
-## 
-
 ## Review
 
 You are required to submit the following for review:
 
-* A walkthrough video demonstrating the functionality of the application.
+* A walkthrough video demonstrating the functionality of the application: 
+    https://watch.screencastify.com/v/AnDWXT0UQPVljDgEuLwB
 
-* A sample README.md file for a project repository generated using your application
+* A sample README.md file for a project repository generated using your application: 
+    /Users/lillian/bootcamp/09-readme-generator/readme_output
 
-* The URL of the GitHub repository, with a unique name and a README describing the project
+* The URL of the GitHub repository, with a unique name and a README describing the project: 
+    https://github.com/lillianlaihughes/09-readme-generator

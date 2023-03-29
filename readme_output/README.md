@@ -1,8 +1,8 @@
-# Test RMG
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+# README Generator 2023
+![License](https://img.shields.io/badge/license-Apache_2.0-blue.svg)
 
 ## Description
-this is a test
+This is a CLI application that creates README files from user input
 
 ## Table of Contents
 * [Installation](#installation)
@@ -21,26 +21,26 @@ this is a test
 ## Installation
 To install necessary dependencies, run the following command:
 ``` 
-test
+npm install
 ```
 
 ## Usage
-test
+Clone the repo
 
 ## Contribution
-test
+Fork the repo and submit pull requests
 
 ## Tests
 To run tests, run the following command:
 ``` 
-test
+npm run test
 ```
 
 ## Questions
-If you have any questions about this repo, open an issue or send a message to lillian@test.com. You can find more of my work at [Github: Lillian](https://github.com/Lillian/).
+If you have any questions about this repo, open an issue or send a message to lillianlaihughes@gmail.com. You can find more of my work at [Github: lillianlaihughes](https://github.com/lillianlaihughes/).
 
 
  ## License 
     
-This project is licensed under the MIT license.
+This project is licensed under the Apache_2.0 license.
  
