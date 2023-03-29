@@ -1,6 +1,6 @@
 # 09 Node.js Challenge: Professional README Generator
 
-## My Motivation
+## Motivation
 In order to learn the ins and outs of Node.js, we were challenged to create a README Generator to be run from the command line interface (CLI) so that users can quickly build a README markdown file that meets professional guidelines.
 
 This CLI application creates a README.md file from user input and featuring a basic format that includes all the sections recommended (Project Title, Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions). This saves the user time and brain power so they can focus on coding!
@@ -13,6 +13,8 @@ The application can be invoked by using the following command in your CLI:
 ```
 node index.js
 ```
+The sample README.md will output to the 'readme_output' folder.
+
 ## User Story
 
 ```md
