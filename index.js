@@ -49,14 +49,15 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Select a license for your project.',
-        choices: ['Apache_2.0', 'MIT', 'GNU_GPLv3', 'None']
+        choices: ['Apache_2.0', 'MIT', 'GPLv3', 'BSD_3', 'None']
     }
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(filename, data) {
     return fs.writeFileSync('README.md', data);
-    // REVIEW fs.writeFileSync doesn't require a callback param like fs.writeFile does
+    // NOTE TO SELF: Review fs.writeFileSync doesn't require a callback param like fs.writeFile does
+    // NOTE TO SELF: Should I create a new folder to put READMEs created from the CLI?
 }
 
 // TODO: Create a function to initialize app
