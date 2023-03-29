@@ -55,7 +55,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(filename, data) {
-    return fs.writeFileSync('README.md', data);
+    return fs.writeFileSync('./readme_output/README.md', data);
     // NOTE TO SELF: Review fs.writeFileSync doesn't require a callback param like fs.writeFile does
     // NOTE TO SELF: Should I create a new folder to put READMEs created from the CLI?
 }
